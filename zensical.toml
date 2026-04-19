@@ -48,7 +48,12 @@ nav = [
   { "Home" = "index.md" },
   { "Module 1: Intro to Programming & Python" = "module1.md" },
   { "Module 2: Python Setup & Virtual Environments" = "module2.md" },
-  { "Module 3: Variables & Data Types" = "module3.md" },
+  { "Module 3a: Variables & Data Types" = "module3a.md" },
+  { "Module 3b: Data Structures" = "module3b.md" },
+  { "Module 3c: Python Operators" = "module3c.md" },
+  { "Module 3d: Type Conversion & Strings" = "module3d.md" },
+  { "Module 4a: Control Flow — If, Elif & Else" = "module4a.md" },
+  { "Module 4b: Loops — For & While" = "module4b.md" },
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
