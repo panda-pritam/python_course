@@ -54,6 +54,9 @@ nav = [
   { "Module 3d: Type Conversion & Strings" = "module3d.md" },
   { "Module 4a: Control Flow — If, Elif & Else" = "module4a.md" },
   { "Module 4b: Loops — For & While" = "module4b.md" },
+  { "Module 5: Functions — Write Once, Use Forever" = "module5.md" },
+  { "Module 6: Error Handling — The Safety Net" = "module6.md" },
+  { "Module 7: Concurrency — Multithreading, AsyncIO & Multiprocessing" = "module7.md" },
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
