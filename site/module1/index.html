@@ -1,0 +1,1784 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A new project generated from the default template project.">
+      
+      
+        <meta name="author" content="<your name here>">
+      
+      
+      
+        <link rel="prev" href="./..">
+      
+      
+        <link rel="next" href="../module2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.33">
+    
+    
+      
+        <title>Module 1: Introduction to Programming & Python - Documentation</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.53a7feaf.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-1-introduction-to-programming-python" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Module 1: Introduction to Programming &amp; Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-code-2" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 1: Intro to Programming & Python
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-code-2" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 1: Intro to Programming & Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-even-is-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤔 What Even IS Programming?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-bridge-between-humans-and-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌉 The Bridge Between Humans and Machines
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-we-even-need-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌍 Why Do We Even Need Programming?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌍 Why Do We Even Need Programming?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#so-what-does-this-mean-in-real-life" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        So what does this mean in real life?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-big-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ The Big Picture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-why-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🐍 So Why Python?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🐍 What is Python?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-python-so-popular-especially-in-gis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌍 Why is Python So Popular (Especially in GIS)?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌍 Why is Python So Popular (Especially in GIS)?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automation-do-more-work-in-less-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. ⚡ Automation — Do More Work in Less Time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-powerful-gis-libraries-pre-built-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 🧰 Powerful GIS Libraries — Pre-built Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-works-inside-major-gis-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 🔌 Works Inside Major GIS Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-handles-big-complex-data-easily" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 📦 Handles Big &amp; Complex Data Easily
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-huge-community-learning-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 🌐 Huge Community &amp; Learning Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-bytecode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Bytecode?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-python-compiled-or-interpreted-its-both" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is Python Compiled or Interpreted? (It's Both 🤯)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-python-virtual-machine-pvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Python Virtual Machine (PVM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-python-is-platform-independent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Python is Platform Independent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-python-interpreter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is a Python Interpreter?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-python-interpreters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Python Interpreters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreter-vs-compiler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpreter vs. Compiler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fundamental-building-blocks-of-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧱 Fundamental Building Blocks of Coding
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧱 Fundamental Building Blocks of Coding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-variables-data-types-the-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 📦 Variables &amp; Data Types — The Storage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-data-structures-the-organizers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 🗄️ Data Structures — The Organizers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-operators-the-math-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. ➕ Operators — The Math &amp; Logic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-control-flow-ifelse-the-decision-maker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 🧠 Control Flow: If/Else — The Decision Maker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-loops-the-task-repeater" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 🔁 Loops — The Task Repeater
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-functions-the-reusable-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. ♻️ Functions — The Reusable Tool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-error-handling-the-safety-net" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 🛡️ Error Handling — The Safety Net
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-big-7-visual-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ The Big 7 — Visual Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Quick Recap
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module2/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-settings" viewBox="0 0 24 24"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 2: Python Setup & Virtual Environments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module3/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 3: Variables & Data Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-even-is-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤔 What Even IS Programming?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-bridge-between-humans-and-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌉 The Bridge Between Humans and Machines
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-we-even-need-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌍 Why Do We Even Need Programming?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌍 Why Do We Even Need Programming?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#so-what-does-this-mean-in-real-life" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        So what does this mean in real life?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-big-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ The Big Picture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-why-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🐍 So Why Python?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🐍 What is Python?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-python-so-popular-especially-in-gis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌍 Why is Python So Popular (Especially in GIS)?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌍 Why is Python So Popular (Especially in GIS)?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automation-do-more-work-in-less-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. ⚡ Automation — Do More Work in Less Time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-powerful-gis-libraries-pre-built-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 🧰 Powerful GIS Libraries — Pre-built Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-works-inside-major-gis-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 🔌 Works Inside Major GIS Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-handles-big-complex-data-easily" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 📦 Handles Big &amp; Complex Data Easily
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-huge-community-learning-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 🌐 Huge Community &amp; Learning Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-bytecode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Bytecode?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-python-compiled-or-interpreted-its-both" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is Python Compiled or Interpreted? (It's Both 🤯)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-python-virtual-machine-pvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Python Virtual Machine (PVM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-python-is-platform-independent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Python is Platform Independent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-python-interpreter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is a Python Interpreter?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-python-interpreters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Python Interpreters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreter-vs-compiler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpreter vs. Compiler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fundamental-building-blocks-of-coding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧱 Fundamental Building Blocks of Coding
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧱 Fundamental Building Blocks of Coding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-variables-data-types-the-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 📦 Variables &amp; Data Types — The Storage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-data-structures-the-organizers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 🗄️ Data Structures — The Organizers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-operators-the-math-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. ➕ Operators — The Math &amp; Logic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-control-flow-ifelse-the-decision-maker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 🧠 Control Flow: If/Else — The Decision Maker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-loops-the-task-repeater" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 🔁 Loops — The Task Repeater
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-functions-the-reusable-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. ♻️ Functions — The Reusable Tool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-error-handling-the-safety-net" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 🛡️ Error Handling — The Safety Net
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-big-7-visual-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ The Big 7 — Visual Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Quick Recap
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="module-1-introduction-to-programming-python">Module 1: Introduction to Programming &amp; Python<a class="headerlink" href="#module-1-introduction-to-programming-python" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>🎉 Welcome! No prior tech experience needed. If you've ever used a microwave, you're already halfway there.</p>
+</blockquote>
+<hr />
+<h2 id="what-even-is-programming">🤔 What Even IS Programming?<a class="headerlink" href="#what-even-is-programming" title="Permanent link">&para;</a></h2>
+<p>Let's start with a wild fact:</p>
+<div class="admonition info">
+<p class="admonition-title">Mind-blowing fact 🤯</p>
+<p>Your computer — that fancy, expensive machine — is, at its core, just a <strong>box of switches</strong>.</p>
+<p>That's it. Millions of tiny switches that are either <strong>ON</strong> or <strong>OFF</strong>.</p>
+</div>
+<p>Computers don't understand English. They don't understand Hindi. They don't even understand "please".</p>
+<p>They only understand <strong>two things</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>What the computer sees</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1</code></td>
+<td>Switch ON ⚡</td>
+</tr>
+<tr>
+<td><code>0</code></td>
+<td>Switch OFF 💤</td>
+</tr>
+</tbody>
+</table>
+<p>This is called <strong>Binary</strong> — and it looks like this:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>01001000 01100101 01101100 01101100 01101111
+</span></code></pre></div>
+<p>You know what that says? It says <strong>"Hello"</strong>. 😅</p>
+<p>Imagine having to write that every time you wanted to say hi to someone. Exhausting, right?</p>
+<hr />
+<h2 id="the-bridge-between-humans-and-machines">🌉 The Bridge Between Humans and Machines<a class="headerlink" href="#the-bridge-between-humans-and-machines" title="Permanent link">&para;</a></h2>
+<p>So here's the problem:</p>
+<ul>
+<li><strong>Humans</strong> think in words, logic, and ideas 🧠</li>
+<li><strong>Computers</strong> think in 0s and 1s 🤖</li>
+</ul>
+<p>That gap needed a solution — and that solution is a <strong>Programming Language</strong>.</p>
+<div class="admonition success">
+<p class="admonition-title">Think of it like this 💡</p>
+<p>A programming language is like a <strong>translator</strong> standing between you and the computer.</p>
+<p>You say: <em>"Hey, add these two numbers."</em>
+The translator converts it to: <code>01001000 10110010...</code>
+The computer does it instantly. ✅</p>
+</div>
+<p>You write something like this:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+</span></code></pre></div>
+<p>And the computer figures out the rest. No binary required from your side. 🙌</p>
+<hr />
+<h2 id="why-do-we-even-need-programming">🌍 Why Do We Even Need Programming?<a class="headerlink" href="#why-do-we-even-need-programming" title="Permanent link">&para;</a></h2>
+<p>Here's the honest truth — computers have <strong>two superpowers</strong> that humans simply don't have:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">⚡ Speed</label><label for="__tabbed_1_2">🤖 Consistency</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>A computer can do <strong>billions of calculations per second</strong>.</p>
+<p>You? Maybe 2-3 per second (on a good day, with coffee ☕).</p>
+</div>
+<div class="tabbed-block">
+<p>A computer <strong>never gets bored</strong>, never gets tired, and never makes "oops I added wrong" mistakes.</p>
+<p>You? After the 50<sup>th</sup> repetitive task... we all know what happens. 😴</p>
+</div>
+</div>
+</div>
+<h3 id="so-what-does-this-mean-in-real-life">So what does this mean in real life?<a class="headerlink" href="#so-what-does-this-mean-in-real-life" title="Permanent link">&para;</a></h3>
+<ul>
+<li>📱 It runs your phone, your apps, your Instagram feed</li>
+<li>🚗 It powers self-driving cars and GPS navigation</li>
+<li>🌦️ It processes massive weather data to predict tomorrow's rain</li>
+<li>📊 It handles stock markets processing millions of trades per second</li>
+<li>🔁 It automates boring, repetitive tasks — so <strong>you</strong> can focus on the creative stuff</li>
+</ul>
+<div class="admonition quote">
+<p class="admonition-title">The big idea</p>
+<p>You aren't just "typing code". You are <strong>solving problems</strong> and <strong>automating the boring stuff</strong> so humans can do what they do best — think, create, and innovate.</p>
+</div>
+<hr />
+<h2 id="the-big-picture">🗺️ The Big Picture<a class="headerlink" href="#the-big-picture" title="Permanent link">&para;</a></h2>
+<p>Here's a visual to tie it all together 👇</p>
+<p><img alt="How programming languages simplify machines" src="../images/How programming languages simplify machines (1).png" /></p>
+<hr />
+<h2 id="so-why-python">🐍 So Why Python?<a class="headerlink" href="#so-why-python" title="Permanent link">&para;</a></h2>
+<p>There are hundreds of programming languages out there — Java, C++, JavaScript, and more. So why are we learning Python?</p>
+<p>Because Python reads almost like <strong>plain English</strong>. Compare:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python 🐍</label><label for="__tabbed_2_2">C++ 😰</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">if</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s too hot!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">temperature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">105</span><span class="p">;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">temperature</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;It&#39;s too hot!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>Same result. Very different experience. Python wins for beginners — every time. 🏆</p>
+<div class="admonition tip">
+<p class="admonition-title">Fun fact 🐍</p>
+<p>Python is named after the British comedy show <strong>Monty Python's Flying Circus</strong> — not the snake. The creator wanted the language to be fun. Mission accomplished.</p>
+</div>
+<hr />
+<h2 id="what-is-python">🐍 What is Python?<a class="headerlink" href="#what-is-python" title="Permanent link">&para;</a></h2>
+<p>Python is a <strong>high-level programming language</strong> — meaning it's designed to be easy for <em>humans</em> to read and write, not just machines.</p>
+<ul>
+<li><strong>Like a Translator:</strong> Python acts as a bridge between you and the computer. You write instructions in "English-like" code, and Python handles the translation to machine language behind the scenes.</li>
+<li><strong>General Purpose:</strong> Python isn't locked into one field. It powers:<ul>
+<li>🌐 Web development (Django, Flask)</li>
+<li>🤖 AI &amp; Machine Learning (TensorFlow, PyTorch)</li>
+<li>📊 Data Science (Pandas, NumPy)</li>
+<li>🗺️ GIS &amp; Spatial Analysis (GeoPandas, ArcPy)</li>
+<li>⚙️ Automation &amp; scripting</li>
+</ul>
+</li>
+<li><strong>Beginner-Friendly:</strong> Its syntax (the rules for writing code) is dramatically simpler than languages like C++ or Java.</li>
+</ul>
+<hr />
+<h2 id="why-is-python-so-popular-especially-in-gis">🌍 Why is Python So Popular (Especially in GIS)?<a class="headerlink" href="#why-is-python-so-popular-especially-in-gis" title="Permanent link">&para;</a></h2>
+<p>Python's popularity in the GIS world isn't just about being easy to learn. It has become the <strong>"glue"</strong> that connects data, software, and advanced science.</p>
+<p>While standard Python is great, its real power comes from thousands of free <strong>libraries</strong> — pre-written code that handles complex tasks in just a few lines.</p>
+<hr />
+<h3 id="1-automation-do-more-work-in-less-time">1. ⚡ Automation — Do More Work in Less Time<a class="headerlink" href="#1-automation-do-more-work-in-less-time" title="Permanent link">&para;</a></h3>
+<p>In GIS, many tasks are repetitive — processing hundreds of maps, converting formats, applying the same styling over and over.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">😩 Without Python</label><label for="__tabbed_3_2">🚀 With Python</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Click the same buttons. Again. And again. For every single file.
+500 satellite images = 500 times of manual clicking. Good luck. 🫠</p>
+</div>
+<div class="tabbed-block">
+<p>Write one script. Run it once. All 500 images processed automatically.
+Go grab a coffee while the computer does the work. ☕</p>
+</div>
+</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Real-world example 🛰️</p>
+<p>You have <strong>500 satellite images</strong> and need to:</p>
+<ul>
+<li>Clip them to a specific area</li>
+<li>Convert their formats</li>
+<li>Apply the same styling</li>
+</ul>
+<p>A Python script handles all 500 in <strong>a few seconds</strong>. No clicking required.</p>
+</div>
+<hr />
+<h3 id="2-powerful-gis-libraries-pre-built-tools">2. 🧰 Powerful GIS Libraries — Pre-built Tools<a class="headerlink" href="#2-powerful-gis-libraries-pre-built-tools" title="Permanent link">&para;</a></h3>
+<p>Python has special libraries (toolkits) built specifically for GIS work.</p>
+<table>
+<thead>
+<tr>
+<th>Library</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ArcPy</strong></td>
+<td>Used inside ArcGIS</td>
+</tr>
+<tr>
+<td><strong>PyQGIS</strong></td>
+<td>Used inside QGIS</td>
+</tr>
+<tr>
+<td><strong>GeoPandas</strong></td>
+<td>Works like Excel, but for maps 🗺️</td>
+</tr>
+<tr>
+<td><strong>GDAL</strong></td>
+<td>Reads &amp; writes spatial data formats</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Real-world example 🏘️</p>
+<p>Want to find all villages within <strong>5 km of a river</strong>?
+With these libraries, that's a few lines of Python — instead of complex manual steps.</p>
+</div>
+<hr />
+<h3 id="3-works-inside-major-gis-software">3. 🔌 Works Inside Major GIS Software<a class="headerlink" href="#3-works-inside-major-gis-software" title="Permanent link">&para;</a></h3>
+<p>Most GIS software already ships with Python built in. You can use it directly inside tools you already know.</p>
+<ul>
+<li>ArcGIS Pro</li>
+<li>QGIS</li>
+<li>GRASS GIS</li>
+</ul>
+<p>This means you can create custom tools, automate workflows, and build your own GIS applications — all from within the software.</p>
+<div class="admonition example">
+<p class="admonition-title">Real-world example 🏙️</p>
+<p>A city planner builds a <strong>custom button in QGIS</strong> that:</p>
+<ol>
+<li>Loads traffic data</li>
+<li>Analyzes congestion</li>
+<li>Generates a report — instantly</li>
+</ol>
+</div>
+<hr />
+<h3 id="4-handles-big-complex-data-easily">4. 📦 Handles Big &amp; Complex Data Easily<a class="headerlink" href="#4-handles-big-complex-data-easily" title="Permanent link">&para;</a></h3>
+<p>GIS often deals with massive datasets — satellite images, GPS tracks, population records. Python helps you clean, analyze, and visualize all of it.</p>
+<div class="admonition example">
+<p class="admonition-title">Real-world example 🌊</p>
+<p>Disaster management teams use Python to:</p>
+<ul>
+<li>Analyze flood zones</li>
+<li>Predict affected areas</li>
+<li>Plan evacuation routes</li>
+</ul>
+</div>
+<hr />
+<h3 id="5-huge-community-learning-support">5. 🌐 Huge Community &amp; Learning Support<a class="headerlink" href="#5-huge-community-learning-support" title="Permanent link">&para;</a></h3>
+<p>Python has one of the largest developer communities in the world. If you get stuck:</p>
+<ul>
+<li>Tutorials are everywhere</li>
+<li>Forums already have your answer</li>
+<li>Tons of free resources available</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Stuck on an error? 🔍</p>
+<p>If you hit a bug while using GeoPandas, chances are someone already solved it and posted the answer on Stack Overflow. Just Google the error message — seriously, it works.</p>
+</div>
+<p><img alt="Why Python for GIS" src="../images/image_644fd94b (1).png" /></p>
+<hr />
+<details class="info">
+<summary>🔧 Bonus: How Python Works Under the Hood (For the Curious)</summary>
+<p>You don't <em>need</em> this to start coding — but if you're curious about what happens when you hit "Run", here it is.</p>
+<h3 id="what-is-bytecode">What is Bytecode?<a class="headerlink" href="#what-is-bytecode" title="Permanent link">&para;</a></h3>
+<p>When you run a <code>.py</code> file, Python doesn't execute your text directly. It first translates it into <strong>Bytecode</strong> (stored in <code>.pyc</code> files) — a low-level set of instructions that's easier for the Python engine to process, but not yet the binary your CPU understands.</p>
+<h3 id="is-python-compiled-or-interpreted-its-both">Is Python Compiled or Interpreted? (It's Both 🤯)<a class="headerlink" href="#is-python-compiled-or-interpreted-its-both" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Step 1 — Compilation:</strong> Python automatically compiles your source code into Bytecode.</li>
+<li><strong>Step 2 — Interpretation:</strong> The Python interpreter reads that Bytecode line-by-line and executes it.</li>
+</ul>
+<p>We call it "interpreted" because the compilation happens invisibly — you never manually build anything.</p>
+<h3 id="the-python-virtual-machine-pvm">The Python Virtual Machine (PVM)<a class="headerlink" href="#the-python-virtual-machine-pvm" title="Permanent link">&para;</a></h3>
+<p>The <strong>PVM</strong> is the heart of the Python engine. It takes Bytecode and converts it into the final machine code your specific computer can run.</p>
+<h3 id="why-python-is-platform-independent">Why Python is Platform Independent<a class="headerlink" href="#why-python-is-platform-independent" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Write a script on Windows → run it on Mac or Linux without changing a single line.</li>
+<li>The Bytecode is <strong>universal</strong> — it looks the same on every system.</li>
+<li>Only the PVM needs to be different per OS. As long as the right PVM is installed, your code runs anywhere.</li>
+</ul>
+<hr />
+<h3 id="what-is-a-python-interpreter">What is a Python Interpreter?<a class="headerlink" href="#what-is-a-python-interpreter" title="Permanent link">&para;</a></h3>
+<p>The interpreter reads and executes your Python code directly, line-by-line in real-time. Here's what happens step-by-step when you run <code>python myscript.py</code>:</p>
+<ol>
+<li><strong>Lexical Analysis (Tokenization):</strong> Breaks your code into small meaningful pieces — keywords, variables, symbols.</li>
+<li><strong>Syntax Check (Parsing):</strong> Checks your code follows Python's grammar. A missing colon? It stops here with a <code>SyntaxError</code>.</li>
+<li><strong>Bytecode Compilation:</strong> Translates your readable code into Bytecode.</li>
+<li><strong>Execution (PVM):</strong> The PVM converts Bytecode into machine code (0s and 1s) your CPU actually runs.</li>
+</ol>
+<h3 id="types-of-python-interpreters">Types of Python Interpreters<a class="headerlink" href="#types-of-python-interpreters" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Interpreter</th>
+<th>What's special</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CPython</strong></td>
+<td>The standard version from python.org (written in C)</td>
+</tr>
+<tr>
+<td><strong>PyPy</strong></td>
+<td>Faster — uses Just-In-Time (JIT) compilation</td>
+</tr>
+<tr>
+<td><strong>Jython</strong></td>
+<td>Runs Python on the Java platform</td>
+</tr>
+<tr>
+<td><strong>MicroPython</strong></td>
+<td>Tiny version for microcontrollers &amp; small hardware</td>
+</tr>
+</tbody>
+</table>
+<h3 id="interpreter-vs-compiler">Interpreter vs. Compiler<a class="headerlink" href="#interpreter-vs-compiler" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Interpreter (Python)</th>
+<th>Compiler (C++)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Translation</strong></td>
+<td>Line-by-line while running</td>
+<td>Entire file at once, before running</td>
+</tr>
+<tr>
+<td><strong>Output</strong></td>
+<td>No separate file created</td>
+<td>Generates a standalone <code>.exe</code></td>
+</tr>
+<tr>
+<td><strong>Debugging</strong></td>
+<td>Stops at first error found</td>
+<td>Shows all errors after compiling</td>
+</tr>
+<tr>
+<td><strong>Speed</strong></td>
+<td>Generally slower</td>
+<td>Generally faster</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Python interpreter diagram" src="../images/image_e26f5114.png" /></p>
+</details>
+<hr />
+<h2 id="fundamental-building-blocks-of-coding">🧱 Fundamental Building Blocks of Coding<a class="headerlink" href="#fundamental-building-blocks-of-coding" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Whether you end up building websites, AI models, or GIS tools — these are the <strong>universal building blocks</strong> of ALL programming. Learn them once in Python, and you can pick up any other language much faster.</p>
+</blockquote>
+<p>We call them the <strong>"Big 7"</strong> 🎯</p>
+<hr />
+<h3 id="1-variables-data-types-the-storage">1. 📦 Variables &amp; Data Types — <em>The Storage</em><a class="headerlink" href="#1-variables-data-types-the-storage" title="Permanent link">&para;</a></h3>
+<p>Think of a variable as a <strong>labeled box</strong> where you store information.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">city_name</span> <span class="o">=</span> <span class="s2">&quot;New York City&quot;</span>      <span class="c1"># 📝 String  — text</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">parcel_count</span> <span class="o">=</span> <span class="mi">105</span>               <span class="c1"># 🔢 Integer — whole number</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">latitude</span> <span class="o">=</span> <span class="mf">40.7128</span>               <span class="c1"># 🌊 Float   — decimal number</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">is_within_boundary</span> <span class="o">=</span> <span class="kc">True</span>        <span class="c1"># ✅ Boolean — True or False</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>What it stores</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>String</strong></td>
+<td>Text</td>
+<td><code>"Riverside Road"</code></td>
+</tr>
+<tr>
+<td><strong>Integer</strong></td>
+<td>Whole numbers</td>
+<td><code>105</code></td>
+</tr>
+<tr>
+<td><strong>Float</strong></td>
+<td>Decimal numbers</td>
+<td><code>40.7128</code></td>
+</tr>
+<tr>
+<td><strong>Boolean</strong></td>
+<td>Yes/No, True/False</td>
+<td><code>True</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Real-world analogy 🗂️</p>
+<p>Imagine you're filling out a form. Name → String. Age → Integer. GPA → Float. Are you a student? → Boolean. Same idea!</p>
+</div>
+<hr />
+<h3 id="2-data-structures-the-organizers">2. 🗄️ Data Structures — <em>The Organizers</em><a class="headerlink" href="#2-data-structures-the-organizers" title="Permanent link">&para;</a></h3>
+<p>What if you have a <strong>collection</strong> of things to store? That's where data structures come in.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># List — ordered sequence (like a numbered to-do list)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">waypoints</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Point_A&quot;</span><span class="p">,</span> <span class="s2">&quot;Point_B&quot;</span><span class="p">,</span> <span class="s2">&quot;Point_C&quot;</span><span class="p">]</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Dictionary — key-value pairs (like a real dictionary: word → meaning)</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">city_info</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;City&quot;</span><span class="p">:</span> <span class="s2">&quot;Mumbai&quot;</span><span class="p">,</span> <span class="s2">&quot;Population&quot;</span><span class="p">:</span> <span class="mi">20000000</span><span class="p">}</span>
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Think of it like this 🧺</p>
+<ul>
+<li>A <strong>List</strong> is like a shopping list — items in order, one after another.</li>
+<li>A <strong>Dictionary</strong> is like a contact book — you look up a name (key) to get a phone number (value).</li>
+</ul>
+</div>
+<hr />
+<h3 id="3-operators-the-math-logic">3. ➕ Operators — <em>The Math &amp; Logic</em><a class="headerlink" href="#3-operators-the-math-logic" title="Permanent link">&para;</a></h3>
+<p>These are the tools for <strong>calculating and comparing</strong> things.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Arithmetic — basic math</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">area</span> <span class="o">=</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">distance</span> <span class="o">=</span> <span class="n">total_km</span> <span class="o">/</span> <span class="n">days</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># Comparison — asking questions</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">5</span>      <span class="c1"># True  — is 10 greater than 5?</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="s2">&quot;a&quot;</span> <span class="o">==</span> <span class="s2">&quot;b&quot;</span>  <span class="c1"># False — are these equal?</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="mi">5</span> <span class="o">!=</span> <span class="mi">3</span>      <span class="c1"># True  — are these NOT equal?</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c1"># Logical — combining conditions</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">is_dry</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="n">is_outside_city</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="n">can_build</span> <span class="o">=</span> <span class="n">is_dry</span> <span class="ow">and</span> <span class="n">is_outside_city</span>  <span class="c1"># True only if BOTH are true</span>
+</span></code></pre></div>
+<hr />
+<h3 id="4-control-flow-ifelse-the-decision-maker">4. 🧠 Control Flow: If/Else — <em>The Decision Maker</em><a class="headerlink" href="#4-control-flow-ifelse-the-decision-maker" title="Permanent link">&para;</a></h3>
+<p>This is where your code starts to <strong>think</strong>. Based on a condition, it takes different paths.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">elevation</span> <span class="o">=</span> <span class="mi">1200</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">if</span> <span class="n">elevation</span> <span class="o">&gt;</span> <span class="mi">1000</span><span class="p">:</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;brown&quot;</span>   <span class="c1"># 🟤 High altitude</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;green&quot;</span>   <span class="c1"># 🟢 Low altitude</span>
+</span></code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Real-world analogy 🚦</p>
+<p>It's exactly like a traffic light. <strong>If</strong> the light is green → go. <strong>Else if</strong> it's yellow → slow down. <strong>Else</strong> → stop. Your code makes decisions the same way.</p>
+</div>
+<hr />
+<h3 id="5-loops-the-task-repeater">5. 🔁 Loops — <em>The Task Repeater</em><a class="headerlink" href="#5-loops-the-task-repeater" title="Permanent link">&para;</a></h3>
+<p>Computers never get tired. Loops let you <strong>repeat a task</strong> without writing the same code 100 times.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># For Loop — repeat for each item in a list</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">shapefiles</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;roads.shp&quot;</span><span class="p">,</span> <span class="s2">&quot;rivers.shp&quot;</span><span class="p">,</span> <span class="s2">&quot;parks.shp&quot;</span><span class="p">]</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">shapefiles</span><span class="p">:</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="n">clip_to_boundary</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>   <span class="c1"># Do this for EVERY file automatically</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># While Loop — keep going until a condition is met</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">errors_found</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="k">while</span> <span class="n">errors_found</span><span class="p">:</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    <span class="n">errors_found</span> <span class="o">=</span> <span class="n">check_for_errors</span><span class="p">()</span>   <span class="c1"># Keep checking until clean ✅</span>
+</span></code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Why this is powerful 💪</p>
+<p>Imagine you have 500 files to process. Without a loop: 500 lines of code. With a loop: 3 lines. That's the magic.</p>
+</div>
+<hr />
+<h3 id="6-functions-the-reusable-tool">6. ♻️ Functions — <em>The Reusable Tool</em><a class="headerlink" href="#6-functions-the-reusable-tool" title="Permanent link">&para;</a></h3>
+<p>Instead of writing the same logic over and over, you <strong>wrap it in a function</strong> and call it whenever you need it.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">calculate_buffer</span><span class="p">(</span><span class="n">location</span><span class="p">,</span> <span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="c1"># All the complex logic lives here</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">location</span> <span class="o">+</span> <span class="n">distance</span>   <span class="c1"># simplified example</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="k">return</span> <span class="n">result</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># Now use it anywhere, anytime!</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">buffer_A</span> <span class="o">=</span> <span class="n">calculate_buffer</span><span class="p">(</span><span class="s2">&quot;Point_A&quot;</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="n">buffer_B</span> <span class="o">=</span> <span class="n">calculate_buffer</span><span class="p">(</span><span class="s2">&quot;Point_B&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">The coffee machine analogy ☕</p>
+<p>A function is like a <strong>coffee machine</strong>.
+- You give it <strong>beans</strong> (Input)
+- It does all the work inside (Process)
+- You get <strong>coffee</strong> (Output)</p>
+<p>You don't need to know how it works inside — you just press the button.</p>
+</div>
+<hr />
+<h3 id="7-error-handling-the-safety-net">7. 🛡️ Error Handling — <em>The Safety Net</em><a class="headerlink" href="#7-error-handling-the-safety-net" title="Permanent link">&para;</a></h3>
+<p>Code breaks. Files go missing. Data has typos. Error handling makes sure your program <strong>doesn't crash dramatically</strong> when something goes wrong.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;city_map.shp&quot;</span><span class="p">)</span>          <span class="c1"># Try to open the file</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Oops! File not found. Check the path and try again.&quot;</span><span class="p">)</span>  <span class="c1"># Graceful message</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Without error handling 💥</p>
+<p>Your entire program crashes with a scary red error message.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">With error handling ✅</p>
+<p>Your program catches the problem, shows a friendly message, and keeps running.</p>
+</div>
+<hr />
+<h2 id="the-big-7-visual-summary">🗺️ The Big 7 — Visual Summary<a class="headerlink" href="#the-big-7-visual-summary" title="Permanent link">&para;</a></h2>
+<p><img alt="Fundamental building blocks of coding" src="../images/image_4585dee0 (1).png" /></p>
+<hr />
+<h2 id="quick-recap">🎯 Quick Recap<a class="headerlink" href="#quick-recap" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>What it does</th>
+<th>One-liner analogy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Variables</strong></td>
+<td>Store data</td>
+<td>Labeled boxes 📦</td>
+</tr>
+<tr>
+<td><strong>Data Structures</strong></td>
+<td>Organize collections</td>
+<td>Shopping list &amp; contact book 🗂️</td>
+</tr>
+<tr>
+<td><strong>Operators</strong></td>
+<td>Math &amp; comparisons</td>
+<td>Calculator + logic 🧮</td>
+</tr>
+<tr>
+<td><strong>If/Else</strong></td>
+<td>Make decisions</td>
+<td>Traffic light 🚦</td>
+</tr>
+<tr>
+<td><strong>Loops</strong></td>
+<td>Repeat tasks</td>
+<td>Robot doing chores 🤖</td>
+</tr>
+<tr>
+<td><strong>Functions</strong></td>
+<td>Reusable code blocks</td>
+<td>Coffee machine ☕</td>
+</tr>
+<tr>
+<td><strong>Error Handling</strong></td>
+<td>Catch &amp; handle failures</td>
+<td>Safety net 🛡️</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition success">
+<p class="admonition-title">You're ready! 🚀</p>
+<p>These 7 concepts are the <strong>entire foundation</strong> of programming. Everything else — AI, web apps, GIS tools — is just these 7 things combined in clever ways. In the next modules, we'll deep dive into each one with hands-on Python code.</p>
+</div>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="./.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../module2/" class="md-footer__link md-footer__link--next" aria-label="Next: Module 2: Python Setup &amp; Virtual Environments">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Module 2: Python Setup & Virtual Environments
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 The authors
+
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.63456bd9.min.js"></script>
+      
+    
+  </body>
+</html>
